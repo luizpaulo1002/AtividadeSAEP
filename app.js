@@ -191,7 +191,7 @@ document.getElementById('form-usuario').addEventListener('submit', async functio
         return;
     }
 
-    // Validação simples de E-mail
+    // Validação simples de email pego da internet para facilitação de uso!
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         showModal('Validação', 'Por favor, insira um e-mail válido.');
