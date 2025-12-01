@@ -1,3 +1,4 @@
+<<<<<<< HEAD:Frontend/style.css
 /* Define a fonte Segoe UI ou fallbacks */
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -53,4 +54,62 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+=======
+/* Define a fonte Segoe UI ou fallbacks */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+}
+
+/* Cores conforme especificado: #0056b3 */
+.header-bg {
+    background-color: #0056b3;
+}
+.btn-primary {
+    background-color: #0056b3;
+    color: #FFFFFF;
+    transition: background-color 0.2s;
+}
+.btn-primary:hover {
+    background-color: #004488;
+}
+.btn-danger {
+    background-color: #dc3545;
+    color: #FFFFFF;
+    transition: background-color 0.2s;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}
+.task-card {
+    border-left-width: 4px;
+}
+.priority-baixa { border-left-color: #28a745; }
+/* CORRIGIDO: de 'média' para 'media' para bater com o JS */
+.priority-media { border-left-color: #ffc107; } 
+.priority-alta { border-left-color: #dc3545; }
+
+/* Estilo da Modal (Mensagens) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+>>>>>>> 2b66359780d9e192b8de39f4b0f0de03269b2965:style.css
 }
