@@ -49,64 +49,60 @@
         </section>
 
         <!-- Seção Cadastro de Tarefa -->
-        <section id="cadastro-tarefa" class="page-section hidden form-wrapper">
-            <div class="form-card">
-                <h2 id="tarefa-form-title" class="section-title">Cadastro de Tarefas</h2>
-                <form id="form-tarefa" class="form-grid">
-                    <input type="hidden" id="tarefa-id"> 
-                    
-                    <div class="form-group">
-                        <label for="tarefa-usuario">Usuário Responsável:</label>
-                        <select id="tarefa-usuario" required class="form-input">
-                            <option value="" disabled selected>Selecione um usuário</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="tarefa-descricao">Descrição da Tarefa:</label>
-                        <input type="text" id="tarefa-descricao" required class="form-input" placeholder="Ex: Criar modelo de relatório">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="tarefa-setor">Setor/Origem:</label>
-                        <input type="text" id="tarefa-setor" required class="form-input" placeholder="Ex: Produção, Qualidade, RH">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="tarefa-prioridade">Prioridade:</label>
-                        <select id="tarefa-prioridade" required class="form-input">
-                            <option value="" disabled selected>Selecione a Prioridade</option>
-                            <option value="baixa">Baixa</option>
-                            <option value="media">Média</option>
-                            <option value="alta">Alta</option>
-                        </select>
-                    </div>
-                    
-                    <button type="submit" id="btn-submit-tarefa" class="btn-primary btn-block">
-                        Cadastrar Tarefa
-                    </button>
-                </form>
-            </div>
+        <section id="cadastro-tarefa" class="page-section hidden">
+            <h2 id="tarefa-form-title" class="section-title">Cadastro de Tarefas</h2>
+            <form id="form-tarefa" class="simple-form">
+                <input type="hidden" id="tarefa-id"> 
+                
+                <div class="form-group-simple">
+                    <label for="tarefa-descricao">Descrição:</label>
+                    <input type="text" id="tarefa-descricao" required class="form-input-simple">
+                </div>
+                
+                <div class="form-group-simple">
+                    <label for="tarefa-setor">Setor:</label>
+                    <input type="text" id="tarefa-setor" required class="form-input-simple">
+                </div>
+                
+                <div class="form-group-simple">
+                    <label for="tarefa-usuario">Usuário:</label>
+                    <select id="tarefa-usuario" required class="form-input-simple">
+                        <option value="" disabled selected>Selecione um usuário</option>
+                    </select>
+                </div>
+                
+                <div class="form-group-simple">
+                    <label for="tarefa-prioridade">Prioridade:</label>
+                    <select id="tarefa-prioridade" required class="form-input-simple">
+                        <option value="" disabled selected>Selecione a Prioridade</option>
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+                
+                <button type="submit" id="btn-submit-tarefa" class="btn-cadastrar">
+                    Cadastrar
+                </button>
+            </form>
         </section>
 
         <!-- Seção Cadastro de Usuário -->
-        <section id="cadastro-usuario" class="page-section hidden form-wrapper">
-            <div class="form-card small-card">
-                <h2 class="section-title">Cadastro de Usuário</h2>
-                <form id="form-usuario" class="form-grid">
-                    <div class="form-group">
-                        <label for="user-nome">Nome Completo:</label>
-                        <input type="text" id="user-nome" required class="form-input" placeholder="Ex: João da Silva">
-                    </div>
-                    <div class="form-group">
-                        <label for="user-email">E-mail:</label>
-                        <input type="email" id="user-email" required class="form-input" placeholder="Ex: joao.silva@empresa.com">
-                    </div>
-                    <button type="submit" class="btn-primary btn-block">
-                        Cadastrar Usuário
-                    </button>
-                </form>
-            </div>
+        <section id="cadastro-usuario" class="page-section hidden">
+            <h2 class="section-title">Cadastro de Usuários</h2>
+            <form id="form-usuario" class="simple-form">
+                <div class="form-group-simple">
+                    <label for="user-nome">Nome:</label>
+                    <input type="text" id="user-nome" required class="form-input-simple">
+                </div>
+                <div class="form-group-simple">
+                    <label for="user-email">Email:</label>
+                    <input type="email" id="user-email" required class="form-input-simple">
+                </div>
+                <button type="submit" class="btn-cadastrar">
+                    Cadastrar
+                </button>
+            </form>
         </section>
 
     </main>

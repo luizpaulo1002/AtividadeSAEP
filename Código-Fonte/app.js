@@ -51,7 +51,7 @@ function navigateTo(targetId) {
         document.getElementById('tarefa-id').value = '';
         document.getElementById('form-tarefa').reset();
         document.getElementById('tarefa-form-title').textContent = 'Cadastro de Tarefas';
-        document.getElementById('btn-submit-tarefa').textContent = 'Cadastrar Tarefa';
+        document.getElementById('btn-submit-tarefa').textContent = 'Cadastrar';
     }
 }
 
@@ -180,7 +180,7 @@ async function editTask(taskId) {
 
         navigateTo('cadastro-tarefa');
         document.getElementById('tarefa-form-title').textContent = 'Editar Tarefa';
-        document.getElementById('btn-submit-tarefa').textContent = 'Atualizar Tarefa';
+        document.getElementById('btn-submit-tarefa').textContent = 'Atualizar';
 
         // Garante que a lista de usuários está carregada
         if(USERS.length === 0) await loadAllUsers();
